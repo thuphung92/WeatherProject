@@ -10,7 +10,7 @@ const minMax = document.querySelector('.min-max p');
 //const input = document.querySelector('#input');
 //console.log(input);
 
-const button = document.getElementById('button').addEventListener('click',console.log('clicked'));
+const button = document.getElementById('button').addEventListener('click',console.log('clicked')); // just for testing if the button works, replace by getLocation later
 
 function getLocation (event) {
     let city = document.getElementsByName('city')[0].value; // need to fixed to get what typed in later
