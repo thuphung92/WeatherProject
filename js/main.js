@@ -7,22 +7,22 @@ const temp = document.querySelector('.temp-value p');
 const desc = document.querySelector('.temp-desc p');
 const minMax = document.querySelector('.min-max p');
 
-const input = document.querySelector('#input');
-console.log(input);
-const button = document.getElementById('button').addEventListener('click',getLocation);
+//const input = document.querySelector('#input');
+//console.log(input);
 
+const button = document.getElementById('button').addEventListener('click',console.log('clicked'));
 
 function getLocation (event) {
-    city = input.value; // need to fixed to get what typed in later
+    let city = document.getElementsByName('city')[0].value; // need to fixed to get what typed in later
     console.log(`City Name: ${city}`);
     getWeather(city); // API call to get weather info
 }
 
 
-console.log(getWeather('westminster')) // assign Westminster to test data only
+console.log(getWeather('westminster')) // assign Westminster to test if the other functions work only
 const weather = {}
-async function getWeather(city) {
-    const result = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`)
+function getWeather(city) {
+    const result = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`)
                     .then((response) => {let data = response.json(); return data})
                     .then((data) => getInfo(data))
                     .then(() => display())
