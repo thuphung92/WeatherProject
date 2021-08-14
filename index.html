@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous" defer></script>
+     <!-- custom javascript -->
+    <script src="js/main.js" defer></script>
+   
+</head>
+
+<body>
+
+    <div class="body-wrapper">
+        <div class="container">
+            <div class="title"><h1 class="fw-bold">Weather</h1></div>
+
+            <div class="form-container">
+                <form>            
+                    <input class="form-control" placeholder="Enter Your City Here..." id="input" type="search" name="city"><br>
+                    <button id="button" type="submit" class="btn btn-primary">Search</button>
+                <form>
+            </div>
+
+            <div class="weather-container">
+                <div class="weather-display border border-2 text-center">
+                    <h2 class="loc text-center fw-bold">Location</h2>
+                    <div class="icon "><img src="icons/unknown.png"></div>
+                    <div class="temp-value"><p class="fw-bolder" style="font-size: larger;">-</p></div>
+                    <div class="temp-desc"><p>-</p></div>
+                    <div class="min-max"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

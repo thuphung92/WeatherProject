@@ -1,0 +1,36 @@
+.title{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.form-container{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+
+.weather-container{
+    display: flex;
+    justify-content: center;
+}
+
+.weather-display{
+    width: 600px;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
+    background-color: white;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+.temp-value{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.temp-value p {
+    font-size: 60px;
+}
