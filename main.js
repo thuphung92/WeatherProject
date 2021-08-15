@@ -45,7 +45,7 @@ function getInfo (data){
     temp.innerHTML = `${weather.temp}°F`;
     desc.innerHTML = `${weather.desc}`;
     date.innerHTML = `${today}`;
-    minMax.innerHTML = `H:${weather.tempMin}° <span>-</span> L:${weather.tempMax}°`;
+    minMax.innerHTML = `H:${weather.tempMin}° <span>-</span> L:${weather.tempMax}°F`;
 };
 
 
