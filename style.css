@@ -1,13 +1,21 @@
+.bg{
+    background: url('../images/bg.jpg') no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .title{
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 .form-container{
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .weather-container{
@@ -18,17 +26,22 @@
 .weather-display{
     width: 400px;
     height: 450px;
-    padding: 30px 30px 30px 30px;
-    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border: 0px solid #fff;
+    background-color: #fff;
+    box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.75);
+    position: relative;  
 }
 
-h2{
-    padding-top: 30px;
-}
 
+h3{
+    padding-top: 5px;
+}
 .temp-value{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .temp-value p {
