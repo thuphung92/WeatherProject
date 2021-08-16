@@ -1,24 +1,32 @@
-.bg{
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
     background: url('../images/bg2.jpg') no-repeat;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
+
 h1{
     color: #fff;
 }
 
 .title{
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .form-container{
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .weather-container{
@@ -27,24 +35,21 @@ h1{
 }
 
 .weather-display{
-    width: 400px;
-    height: 450px;
+    width: 350px;
+    height: 400px;
     padding: 20px 20px 20px 20px;
     border: 0px solid #fff;
-    background-color: #fff;
+    background: rgba(255,255,255,.65);
+    border-radius: 2rem;
     box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 4px 24px 0px rgba(0,0,0,0.75);
     position: relative;  
 }
 
-
-h3{
-    padding-top: 5px;
-}
 .temp-value{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .temp-value p {
