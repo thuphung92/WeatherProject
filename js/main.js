@@ -1,4 +1,4 @@
-const APIKEY = '5e6d915a8be4c7b572f373743a2c4e28';
+const APIKEY = ;
 const kelvinToFarenheit = (K) => ((K-273.15)*1.8)+32;
 const today = new Date().toLocaleString();
 
